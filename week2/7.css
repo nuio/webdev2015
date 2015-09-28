@@ -1,0 +1,13 @@
+.red {
+  color: red;
+}
+.large {
+  font-size: 20px;
+}
+.small {
+  font-size: 12px;
+}
+
+.red.large {
+  font-weight: 300;
+}
