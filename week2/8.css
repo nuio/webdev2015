@@ -1,0 +1,21 @@
+.red {
+  color: red;
+}
+.large {
+  font-size: 20px;
+}
+.small {
+  font-size: 12px;
+}
+
+.red.large {
+  font-weight: 300;
+}
+
+.red button {
+    background-color: red;
+}
+
+button {
+    background-color: orange;
+}
