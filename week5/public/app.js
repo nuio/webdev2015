@@ -24,10 +24,14 @@ var ToDoList = React.createClass({
 
 var TodoApp = React.createClass({
     getInitialState: function() {
+        request("GET", "/todos", function(err, resp) {
+            this.setState({todos: JSON.parse(resp.body)});
+        }.bind(this));
         return {todos: []}
     },
     addTodo: function() {        
-        var todo = this.refs.todoBox.value;
+        var todo = this.refs.todoBox.value;  
+        request("POST", "/todos", {'json': {'todo': todo}});
         this.setState({
             todos: this.state.todos.concat([todo])
         });

@@ -1,4 +1,6 @@
 ## Resources for Week 5
+[body-parser](https://github.com/expressjs/body-parser/) is used to extract form data from POST requests.
+
 [nedb](https://github.com/louischatriot/nedb) is a lightweight database that can store JSON objects
 on your filesystem.
 
